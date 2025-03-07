@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+
+  <body style="box-sizing: border-box; font-family: Arial, sans-serif">
+    <div>
+      <div style="text-align: center">
+        <header style="font-weight: bold; color: chocolate">
+          Student Registration Form
+        </header>
+      </div>
+
+      <form
+        id="studentForm"
+        style="
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+          color: rgb(184, 29, 29);
+          max-width: 600px;
+          height: 550px;
+          border: 2px solid black;
+          padding: 50px;
+          margin: auto;
+          background-color: #f2f0f0f2;
+          border-radius: 15px;
+        "
+      >
+        <div
+          style="
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <label>First Name:</label>
+          <input
+            id="firstName"
+            type="text"
+            placeholder="Enter first name"
+            required
+            style="
+              width: fit-content;
+              padding: 5px;
+              border-style: outset;
+              border-radius: 5px;
+              box-shadow: 0px 0px 5px;
+            "
+          />
+        </div>
+        <div
+          style="
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <label>Last Name:</label>
+          <input
+            id="lastName"
+            type="text"
+            placeholder="Enter last name"
+            required
+            style="
+              width: fit-content;
+              padding: 5px;
+              border-style: outset;
+              border-radius: 5px;
+              box-shadow: 0px 0px 5px;
+            "
+          />
+        </div>
+        <div
+          style="
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <label>Father's Name:</label>
+          <input
+            id="fathersName"
+            type="text"
+            placeholder="Enter father's name"
+            required
+            style="
+              width: fit-content;
+              padding: 5px;
+              border-style: outset;
+              border-radius: 5px;
+              box-shadow: 0px 0px 5px;
+            "
+          />
+        </div>
+        <div
+          style="
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <label>Mother's Name:</label>
+          <input
+            id="mothersName"
+            type="text"
+            placeholder="Enter mother's name"
+            required
+            style="
+              width: fit-content;
+              padding: 5px;
+              border-style: outset;
+              border-radius: 5px;
+              box-shadow: 0px 0px 5px;
+            "
+          />
+        </div>
+        <div
+          style="
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <label>Birth Date:</label>
+          <input
+            id="birthDate"
+            type="date"
+            required
+            style="
+              width: fit-content;
+              padding: 5px;
+              border-style: outset;
+              border-radius: 5px;
+              box-shadow: 0px 0px 5px;
+            "
+          />
+        </div>
+        <div
+          style="
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <label>Email:</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter email"
+            required
+            style="
+              width: fit-content;
+              padding: 5px;
+              border-style: outset;
+              border-radius: 5px;
+              box-shadow: 0px 0px 5px;
+            "
+          />
+        </div>
+        <div
+          style="
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <label>Mobile Number:</label>
+          <input
+            id="mobile"
+            type="tel"
+            placeholder="+91"
+            required
+            style="
+              width: fit-content;
+              padding: 5px;
+              border-style: outset;
+              border-radius: 5px;
+              box-shadow: 0px 0px 5px;
+            "
+          />
+        </div>
+        <div
+          style="
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <label>Education:</label>
+          <input
+            id="education"
+            type="text"
+            placeholder="Enter your education"
+            list="Qualifications"
+            required
+            style="
+              width: fit-content;
+              padding: 5px;
+              border-style: outset;
+              border-radius: 5px;
+              box-shadow: 0px 0px 5px;
+            "
+          />
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+          "
+        >
+          <label>Gender:</label>
+
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label
+            ><input type="radio" name="gender" value="female" /> Female</label
+          >
+        </div>
+        <div
+          style="
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <label>Choose Course:</label>
+          <input
+            id="course"
+            type="text"
+            list="courses"
+            placeholder="Search for a course..."
+            style="
+              width: fit-content;
+              padding: 5px;
+              border-style: outset;
+              border-radius: 5px;
+              box-shadow: 0px 0px 5px;
+            "
+          />
+          <datalist id="courses">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JAVASCRIPT"></option>
+            <option value="Python"></option>
+            <option value="Java"></option>
+            <option value="PHP"></option>
+            <option value="Ruby"></option>
+          </datalist>
+        </div>
+        <div
+          style="
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <label>Address:</label>
+          <textarea
+            id="address"
+            rows="2"
+            type="text"
+            placeholder="Enter address"
+            required
+            style="
+              width: fit-content;
+              padding: 5px;
+              border-style: outset;
+              border-radius: 5px;
+              box-shadow: 0px 0px 5px;
+            "
+          ></textarea>
+        </div>
+        <div
+          style="
+            font-weight: bold;
+            flex: 1 1 calc(50%);
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <label>Photo:</label>
+          <input type="file" required style="width: fit-content" />
+        </div>
+        <div style="margin-left: 45%; margin-top: 5%">
+          <button
+            type="submit"
+            style="
+              width: 100%;
+              background-color: chocolate;
+              padding: 5px;
+              border-style: outset;
+              border-radius: 5px;
+              box-shadow: 0px 0px 5px;
+            "
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <h2
+      style="
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        margin-top: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+      "
+    >
+      Registered Students
+    </h2>
+
+    <div
+      style="
+        overflow-x: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      "
+    >
+      <table
+        id="studentsTable"
+        style="
+          width: 90%;
+          max-width: 1200px;
+          border-collapse: collapse;
+          background: #fff;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+          text-align: center;
+          margin-bottom: 20px;
+        "
+      >
+        <thead
+          style="
+            background: #007bff;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+          "
+        >
+          <tr>
+            <th
+              style="
+                padding: 15px;
+                border-right: 1px solid rgba(255, 255, 255, 0.3);
+              "
+            >
+              First Name
+            </th>
+            <th
+              style="
+                padding: 15px;
+                border-right: 1px solid rgba(255, 255, 255, 0.3);
+              "
+            >
+              Last Name
+            </th>
+            <th
+              style="
+                padding: 15px;
+                border-right: 1px solid rgba(255, 255, 255, 0.3);
+              "
+            >
+              Mobile
+            </th>
+            <th
+              style="
+                padding: 15px;
+                border-right: 1px solid rgba(255, 255, 255, 0.3);
+              "
+            >
+              Course
+            </th>
+            <th
+              style="padding: 15px  border-right: 1px solid rgba(255, 255, 255, 0.3);"
+            >
+              Actions
+            </th>
+          </tr>
+        </thead>
+        <tbody style="background: #f8f9fa"></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="1.js"></script>
+</html>
