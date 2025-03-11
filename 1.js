@@ -41,11 +41,10 @@ function displayStudents() {
     row.innerHTML = `
       <td>${student.firstName}</td>
       <td>${student.lastName}</td>
-      <td>${student.mobile}</td>
-      <td>${student.course}</td>
+      
       <td>
         <button  onclick="editStudent(${index})" style="background: #ffc107; 
-          color: black; 
+          color: black;
           border: none; 
           padding: 6px 12px; 
           margin: 2px;
